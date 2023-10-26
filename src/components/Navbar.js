@@ -6,6 +6,7 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
 import navImg from '../assets/img/navImg.png';
 import { BsArrowUpRight } from "react-icons/bs";
+import {CiUser} from 'react-icons/ci';
 
 import navPaperBag from '../assets/img/navPaperBag.png';
 import tissuePapers from '../assets/img/tissuePapers.png';
@@ -86,8 +87,11 @@ const Navbar = () => {
                 <BsTelephone className='mr-2' />
                 <span><a href='tel:9772906080'>+91 9772 9060 80</a></span>
               </div>
-              <div className="login mr-6">
+              <div className="login mr-6 ">
                 <button className="bg-custom-btn text-white w-[90px] h-[40px] rounded" onClick={handleLoginClick}>Log in</button>
+              </div>
+              <div className='logged_user mr-6 hidden'>
+                <button className='border-2 border-[#00A6DB] w-[130px] h-[35px] flex text-sm pt-1 pl-3 rounded-[4px] text-[#00A6DB] font-medium' >My Account <CiUser className='mt-[2px] ml-2 w-5 h-5 font-semibold' /></button>
               </div>
               <div className='text-custom-text-green'>
                 <IoMdCart className='text-4xl' />

@@ -1,6 +1,10 @@
 import WhiteArrow from '../assets/img/white_arrow.png'
 import Share from '../assets/img/share_btn.png'
+import { useEffect } from 'react';
 const Blogs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
   return (
  <>
     <div className="w-[100%]">

@@ -218,7 +218,7 @@ function Footer() {
                     <hr className="border-t-2 border-green w-full" />
                 </div>
                 <div className="font-light text-custom-text-grey text-[14px] flex justify-between">
-                    <div className="w-1/5">
+                    <div className="w-1/5 mr-[150px]">
                         <img src={Logo} alt="inkprint logo" />
                         <p>
                             Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.

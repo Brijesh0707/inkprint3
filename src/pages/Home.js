@@ -20,6 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 
+
 const Home = () => {
   const swiperRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -159,18 +160,20 @@ const Home = () => {
           →
         </button>
       </div> */}
+   
       <Swiper
         slidesPerView={3}
         spaceBetween={1}
         slidesPerGroup={3}
         cssMode={true}
         navigation={false}
-        pagination={true}
+        pagination={false}
         mousewheel={true}
         keyboard={true}
+        // centeredSlides={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         ref={swiperRef}
-        Mousewheel={true}
+       
        
        
         className="mySwiper"
@@ -192,6 +195,7 @@ const Home = () => {
 
 
       </Swiper>
+      
 
       <div className='products-wrapper bg-custm-bg-product mt-10 mb-10'>
         <h1 className='pt-10 pl-10 text-3xl text-custom-text-p'>Packaging Printing</h1>
